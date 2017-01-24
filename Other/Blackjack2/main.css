@@ -1,0 +1,111 @@
+body {
+    font-family:sans-serif;
+    padding:4em;
+}
+#yourHand {
+    overflow:hidden;
+    position:relative;
+    border:1px solid #056B42;
+    border-radius:3px;
+
+}
+.card {
+  background:red;
+  border: 1px solid gray;
+  border-radius:4px;
+
+}
+.card:first-child {margin-left:0;}
+
+/*.Spades, .Clubs {color:black}
+.Diamonds, .Hearts {color:red}*/
+
+#deal {
+    -moz-box-shadow:inset 0px -1px 4px 3px #9f71d1;
+    -webkit-box-shadow:inset 0px -1px 4px 3px #9f71d1;
+    box-shadow:inset 0px -1px 4px 3px #9f71d1;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #9f71d1), color-stop(1, #3a096a) );
+    background:-moz-linear-gradient( center top, #9f71d1 5%, #3a096a 100% );
+    background-color:#9f71d1;
+
+}
+#deal:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #3a096a), color-stop(1, #9f71d1) );
+    background:-moz-linear-gradient( center top, #3a096a 5%, #9f71d1 100% );
+    background-color:#3a096a;
+}
+
+#hit {
+    -moz-box-shadow:inset 0px -1px 4px 3px #69d1a7;
+    -webkit-box-shadow:inset 0px -1px 4px 3px #69d1a7;
+    box-shadow:inset 0px -1px 4px 3px #69d1a7;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #10a469), color-stop(1, #056b42) );
+    background:-moz-linear-gradient( center top, #10a469 5%, #056b42 100% );
+    background-color:blue;
+
+
+/*}
+#hit:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #056b42), color-stop(1, #10a469) );
+    background:-moz-linear-gradient( center top, #056b42 5%, #10a469 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#056b42', endColorstr='#10a469');
+    background-color:#056b42;
+}*/
+#hit:active {
+    position:relative;
+    top:1px;
+}
+#stand {
+  -moz-box-shadow:inset 0px -1px 4px 3px #69d1a7;
+  -webkit-box-shadow:inset 0px -1px 4px 3px #69d1a7;
+  box-shadow:inset 0px -1px 4px 3px #69d1a7;
+  background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #10a469), color-stop(1, #056b42) );
+  background:-moz-linear-gradient( center top, #10a469 5%, #056b42 100% );
+  background-color:blue;
+
+}
+/*#stand:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #f16e17), color-stop(1, #f89350) );
+    background:-moz-linear-gradient( center top, #f16e17 5%, #f89350 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f16e17', endColorstr='#f89350');
+    background-color:#f16e17;*/
+}
+#stand:active {
+    position:relative;
+    top:1px;
+}
+
+#replay {
+    -moz-box-shadow:inset 0px -1px 4px 3px #69d1a7;
+    -webkit-box-shadow:inset 0px -1px 4px 3px #69d1a7;
+    box-shadow:inset 0px -1px 4px 3px #69d1a7;
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #10a469), color-stop(1, #056b42) );
+    background:-moz-linear-gradient( center top, #10a469 5%, #056b42 100% );
+    background-color:blue;
+    text-shadow:1px 1px 0px #287b58;
+/*}
+#hit:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #056b42), color-stop(1, #10a469) );
+    background:-moz-linear-gradient( center top, #056b42 5%, #10a469 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#056b42', endColorstr='#10a469');
+    background-color:#056b42;
+}*/
+#replay:active {
+    position:relative;
+    top:1px;
+}
+
+div.controls input
+{
+	margin-left: 20px;
+	width: 200px;
+}
+
+#hit, #stand #replay {display:all;}
+#yourScore .digits {font-weight:700}
+#wins {color:#056B42;}
+#losses {color:#F16D17;}
+
+// citaions:: http://codereview.stackexchange.com/questions/82895/oop-blackjack-game
+//  http://math.hws.edu/eck/cs271/js-work/Blackjack.html
+//
