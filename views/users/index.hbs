@@ -1,0 +1,14 @@
+<!-- <h1>Traveller: {{users.username}}</h1> -->
+
+<!-- {{#if users}}
+  <h1>Traveller  {{username}}</h1>
+{{/if}} -->
+
+{{#each users}}
+  <h2>{{username}}</h2>
+  <ul>
+    {{#each trips}}
+    <li>{{name}}:<br> From  {{begin}} -to- {{end}}</li>
+    {{/each}}
+  </ul>
+{{/each}}

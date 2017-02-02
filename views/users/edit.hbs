@@ -1,0 +1,9 @@
+<h2> Edit </h2>
+<form action="/users/{{user.id}}/trips/{{trip.id}}?_method=PUT" method="POST">
+  <input type="text" name="name" placeholder="Name" value="{{trip.name}}"><br>
+  <input type="text" name="begin" placeholder="begin" value="{{trip.begin}}">
+  <input type="text" name="end" placeholder="end" value="{{trip.end}}">
+  <input type="hidden" name="userId" value="{{user.id}}">
+  <input type="submit" value="Submit Changes">
+
+</form>

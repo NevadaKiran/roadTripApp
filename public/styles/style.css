@@ -1,0 +1,72 @@
+body {
+  /*background: url("../images/roadUSA.jpg");*/
+  background: url('../images/mountainUSA.jpg') no-repeat left center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+
+  font: solid black;
+  font-weight: bold;
+  /*font-family: 'Cormorant', serif;*/
+  text-align: center;
+  font-size: 18px;
+  width: 300px;
+ height: 300px;
+ display: block;
+ position: relative;
+}
+body::after {
+  content: "";
+  background: url(image.jpg);
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+nav {
+  font: solid black;
+  font-weight: bold;
+  background-color: white;
+}
+h1 {
+  background-color: grey;
+  color: black;
+  font: bold;
+  /*opacity: 0.7;*/
+  margin-bottom: : 0px;
+  padding: 40px;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  border: grey;
+}
+h2 {
+  background-color: white;
+  opacity: 0.7;
+  margin-bottom: 0px;
+}
+
+a {
+  font: solid black;
+  font-weight: bold;
+  /*background-color: grey;*/
+  opacity: 0.5;
+}
+
+ul {
+  background-color: white;
+  opacity: 0.8;
+  align-items: right;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+form {
+  font: solid black;
+  font-weight: bold;
+  /*background-color: grey;*/
+  opacity: 0.6;
+}
