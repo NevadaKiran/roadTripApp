@@ -1,0 +1,17 @@
+<table>
+  <tr>
+    <th>Artist</th>
+    <th>Image</th>
+    <th>Albums</th>
+    <th>Hometown</th>
+    <th>Show</th>
+  </tr>
+
+  <tr ng-repeat="artist in muse.artists">
+    <td><a ng-click="muse.getShow(artist)">{{artist.name}}</a></td>
+    <td><img ng-src="{{artist.img}}"/></td>
+    <td>{{artist.albums}}</td>
+    <td>{{artist.hometown}}</td>
+    <td><a ng-click="muse.getShow(artist)">SHOW</a></td>
+  </tr>
+</table>

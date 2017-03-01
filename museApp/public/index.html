@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html ng-app="museApp">
+  <head>
+    <title>Muse</title>
+
+    <!--  Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+    <script src='js/app.js'></script>
+    <script src='js/museController.js'></script>
+
+    <style>
+      img {
+        width: 100px;
+        height: 100px
+      }
+    </style>
+
+
+  </head>
+  <body ng-controller="MuseController as muse">
+    <nav>
+        <ul>
+            <li><a ui-sref-active="active" ui-sref="artists">Artists</a></li>
+            <li><a ui-sref-active="active" ui-sref="newArtist">New Artist</a></li>
+        </ul>
+    </nav>
+
+    <ui-view></ui-view>
+
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<h3>Add New Artist</h3>
+
+<form ng-submit='muse.addArtist()'>
+  <div>
+    <label>Artist's Name</label>
+    <input type="text" placeholder="Bono" ng-model='muse.newArtist.name'>
+  </div>
+  <div>
+    <label>Hometown</label>
+    <input type="text" placeholder="Riverside" ng-model='muse.newArtist.hometown'>
+  </div>
+  <div>
+    <label>Image</label>
+    <input type="text" placeholder="image url" ng-model='muse.newArtist.img'>
+  </div>
+
+  <div>
+    <input type="submit" value="Add Artist">
+  </div>
+</form>
