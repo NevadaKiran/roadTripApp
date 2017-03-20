@@ -1,0 +1,41 @@
+<div class="col-lg-8 col-lg-offset-2">
+ <form ng-submit="slate_ctrl.newSlate(slate)">
+  <h2>NATIONAL ELECTIONS</h2>
+  <h3>US PRESIDENT</h3>
+    <input type="text" ng-model="slate.president" placeholder="President" required="required"></input>
+    <input type="text" ng-model="slate.president_reasons" placeholder="REASONS" required="required"></input><br>
+    <h3>US CONGRESS</h3>
+    <input type="text" ng-model="slate.us_senate" placeholder="US Senate" required="required"></input>
+    <input type="text" ng-model="slate.us_senate_reasons" placeholder="REASONS" required="required"></input><br>
+    <input type="text" ng-model="slate.us_congress" placeholder="US Congress" required="required"></input>
+    <input type="text" ng-model="slate.us_ongress_reasons" placeholder="REASONS" required="required"></input><br>
+    <h3>STATE REPRESENTATIVES</h3>
+    <input type="text" ng-model="slate.nv_senate" placeholder="NV Senate" required="required"></input>
+    <input type="text" ng-model="slate.nv_senate_reasons" placeholder="REASONS" required="required"></input><br>
+    <input type="text" ng-model="slate.nv_assembly" placeholder="NV Assembly" required="required"></input>
+    <input type="text" ng-model="slate.nv_assembly_reasons" placeholder="REASONS" required="required"></input><br>
+    <h2>LOCAL RACES</h2>
+    <h3>CITY COUNCIL</h3>
+    <input type="text" ng-model="slate.city_council1" placeholder="City Council1" required="required"></input>
+    <input type="text" ng-model="slate.city_council1_reasons" placeholder="REASONS" required="required"></input><br>
+    <input type="text" ng-model="slate.city_council2" placeholder="City Council2" required="required"></input>
+    <input type="text" ng-model="slate.city_council2_reasons" placeholder="REASONS" required="required"></input><br>
+    <h3>Judges</h3>
+    <input type="text" ng-model="slate.judge1" placeholder="Judge1" required="required"></input>
+    <input type="text" ng-model="slate.judge1_reasons" placeholder="REASONS" required="required"></input><br>
+    <input type="text" ng-model="slate.judge2" placeholder="Judge2" required="required"></input>
+    <input type="text" ng-model="slate.judge2_reasons" placeholder="REASONS" required="required"></input><br>
+    <input type="text" ng-model="slate.judge3" placeholder="Judge3" required="required"></input>
+    <input type="text" ng-model="slate.judge3_reasons" placeholder="REASONS" required="required"></input><br>
+    <h2>ISSUES</h2>
+    <input type="text" ng-model="slate.issue1" placeholder="Issue1" required="required"></input>
+    <input type="text" ng-model="slate.issue1_reasons" placeholder="REASONS" required="required"></input><br>
+    <input type="text" ng-model="slate.issue2" placeholder="Issue2" required="required"></input>
+    <input type="text" ng-model="slate.issue2_reasons" placeholder="REASONS" required="required"></input><br>
+    <input type="text" ng-model="slate.issue3" placeholder="Issue3" required="required"></input>
+    <input type="text" ng-model="slate.issue3_reasons" placeholder="REASONS" required="required"></input>
+
+
+    <button type="submit">SAVE</button>
+</form>
+</div>
